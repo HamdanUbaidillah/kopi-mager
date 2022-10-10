@@ -5,15 +5,17 @@ import Home from "./components/home";
 import Tentang from "./components/tentang";
 import Menu from "./components/menu";
 import Reviews from "./components/review";
+import Footer from "./components/footer";
 
 const App = () => {
   return (
     <main>
-      {/* <Navbar />
+      <Navbar />
       <Home />
       <Tentang />
-      <Menu /> */}
+      <Menu />
       <Reviews />
+      <Footer />
     </main>
   );
 };

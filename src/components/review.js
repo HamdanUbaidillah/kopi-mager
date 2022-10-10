@@ -1,32 +1,34 @@
 import React from "react";
 import "../App.css";
-import Carousel from "react-elastic-carousel";
-import Item from "./item-carousel";
 
 const Reviews = () => {
-  const breakPoints = [
-    { width: 1, itemsToShow: 1 },
-    { width: 550, itemsToShow: 2 },
-    { width: 768, itemsToShow: 3 },
-    { width: 1200, itemsToShow: 4 },
-  ];
-
   return (
-    <section>
-      <h1 style={{ textAlign: "center" }}>Example to setup your carousel in react</h1>
-      <div>
-        <Carousel breakPoints={breakPoints}>
-          <Item>One</Item>
-          <Item>Two</Item>
-          <Item>Three</Item>
-          <Item>Four</Item>
-          <Item>Five</Item>
-          <Item>Six</Item>
-          <Item>Seven</Item>
-          <Item>Eight</Item>
-        </Carousel>
+    <div className="container" id="review">
+      <div className="title">
+        <h1>Apa kata pelanggan?</h1>
       </div>
-    </section>
+      <div className="carousel-container">
+        {/* <button className="left">
+          <img src={require("./img/icons/arrow.png")} alt="arrow" />
+        </button>
+        <button className="right">
+          <img src={require("./img/icons/arrow.png")} alt="arrow" />
+        </button> */}
+        <div className="reviews">
+          <div className="review">
+            <img className="reviewer-img" src={require("./img/reviewer.png")} alt="reviewer" />
+            <h2 className="name">Erick Yuda</h2>
+            <img className="stars" src={require("./img/stars.png")} alt="stars" />
+            <p>“Pelayanan baik, kopi dan makananya enak sangat recomended bagi penikmat kopi atau yang pengen minum kopi saja” </p>
+          </div>
+          {/* <div className="dots">
+            <button className="filled-dot"></button>
+            <button></button>
+            <button></button>
+          </div> */}
+        </div>
+      </div>
+    </div>
   );
 };
 

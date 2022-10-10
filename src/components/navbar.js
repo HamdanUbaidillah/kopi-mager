@@ -2,37 +2,36 @@ import React from "react";
 import "../App.css";
 
 const Navbar = () => {
-  const smoothScroll = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
-
   return (
     <nav>
       <div className="logo">
-        <a href="#">
+        <a href="#home">
           <p>KopiMager</p>
         </a>
       </div>
       <div className="list-items">
+        <input id="check" type="checkbox" />
+        <label htmlFor="check">
+          <div className="line"></div>
+          <div className="line"></div>
+          <div className="line"></div>
+        </label>
         <ul>
-          <a href="#">
+          <a href="#home">
             <li>Beranda</li>
           </a>
-          <a href="#">
+          <a href="#tentang">
             <li>Tentang</li>
           </a>
-          <a href="#">
+          <a href="#menu">
             <li>Menu</li>
           </a>
-          <a href="#">
+          <a href="#review">
             <li>Review</li>
           </a>
           <a href="#">
             <span>
-              <li>Pesan Online</li>
+              <li className="pesan-online">Pesan Online</li>
             </span>
           </a>
         </ul>

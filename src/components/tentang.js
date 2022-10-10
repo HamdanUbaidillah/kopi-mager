@@ -3,7 +3,7 @@ import "../App.css";
 
 const Tentang = () => {
   return (
-    <div className="container">
+    <div className="container" id="tentang">
       <div className="title">
         <h1>Tentang kami</h1>
       </div>
@@ -11,7 +11,7 @@ const Tentang = () => {
         <img id="img-about" src={require("./img/bg/bg-about.jpg")} />
         <div className="about-section">
           <h2>What makes us special?</h2>
-          <p>Kopi kami dibuat menggunakan biji kopi pilihan yang dipetik dari petani terbaik dan diolah oleh tangan profesional. Rasakan kesegaran dan kenikmatan kopi terbaik dari kami.</p>
+          <p className="about-text">Kopi kami dibuat menggunakan biji kopi pilihan yang dipetik dari petani terbaik dan diolah oleh tangan profesional. Rasakan kesegaran dan kenikmatan kopi terbaik dari kami.</p>
           <div className="icons-container">
             <div className="icon-container">
               <img className="icon" src={require("./img/icons/coffee-beans.png")} alt="bean" />
